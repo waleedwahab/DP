@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication1;
+
+/**
+ *
+ * @author fa19-bse-171
+ * 
+ */
+class sigleton
+{
+    private static sigleton obj = new sigleton();
+    private sigleton()
+    {
+        
+        
+    };
+    public static sigleton getinstance()
+    {
+        return obj;
+    }
+    public void method1 ()
+    {
+        System.out.println("iam in  method");  
+    }
+}
+
+ 
+public class JavaApplication1 {
+
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        sigleton obj1;
+      obj1 =  sigleton.getinstance();
+      obj1.method1();
+      
+        
+        
+       
+    }
+    
+}
